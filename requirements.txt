@@ -1,2 +1,4 @@
+Werkzeug==2.3.7pip
 Flask==2.2.2
+python-dotenv==1.0.0
 line-bot-sdk
