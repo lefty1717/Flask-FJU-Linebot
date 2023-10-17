@@ -1,0 +1,2 @@
+# vercel_linebot_flask
+使用Python Flask框架建立Linebot機器人並部署在Vercel上
