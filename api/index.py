@@ -64,6 +64,9 @@ def handle_message(event):
         sent_msg = event.message.text
         if sent_msg == "課程大綱":
             # 從data.csv讀取資料
+            # 學制別,學年度,學期,開課單位,課程編號,科目名稱,上課日,上課時間,上課地點,選別,學分,教師背景,教師職稱,授課教師,授課語言
+            # 研究所,112,1,資管碩一,D0F0333541,金融數據分析與智慧交易,Monday 星期一,"D5,D6,D7",SF130,選修,3,專任,助理教授,邱嘉洲,中文
+            # 研究所,112,1,資管碩一,G745032133,敏捷式軟體開發,Monday 星期一,"E1,E2,E3",LW210,選修,3,專任,助理教授,吳濟聰,中文
             data = []
             with open('data.csv', newline='', encoding='utf-8') as csvfile:
                 reader = csv.reader(csvfile)
@@ -71,11 +74,7 @@ def handle_message(event):
                     data.append(row)
             reply_msg = ""
             for row in data:
-                reply_msg += f"{row[0]}：{row[1]}\n"
-                line_bot_api.reply_message(
-                    event.reply_token,
-                    TextSendMessage(text=reply_msg))
-                
+                reply_msg += f"{row[1]}-{row[2]} {row[5]} {row[13]}\n"
         else:
             line_bot_api.reply_message(
                 event.reply_token,
