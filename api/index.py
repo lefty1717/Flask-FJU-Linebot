@@ -75,6 +75,10 @@ def handle_message(event):
             reply_msg = ""
             for row in data:
                 reply_msg += f"{row[1]}-{row[2]} {row[5]} {row[13]}\n"
+            line_bot_api.reply_message(
+                event.reply_token,
+                TextSendMessage(text=reply_msg)
+            )
         else:
             line_bot_api.reply_message(
                 event.reply_token,
