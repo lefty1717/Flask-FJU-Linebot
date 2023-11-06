@@ -4,6 +4,7 @@ from linebot.exceptions import InvalidSignatureError
 from linebot.models import MessageEvent, TextMessage, TextSendMessage
 
 import os
+import csv
 from dotenv import load_dotenv
 
 # 載入.env檔案中的變數
@@ -60,10 +61,25 @@ def handle_message(event):
         # chatgpt.add_msg(f"HUMAN:{event.message.text}?\n")
         # reply_msg = chatgpt.get_response().replace("AI:", "", 1)
         # chatgpt.add_msg(f"AI:{reply_msg}\n")
-        reply_msg = event.message.text
-        line_bot_api.reply_message(
-            event.reply_token,
-            TextSendMessage(text=reply_msg))
+        sent_msg = event.message.text
+        if sent_msg == "課程大綱":
+            # 從data.csv讀取資料
+            data = []
+            with open('data.csv', newline='', encoding='utf-8') as csvfile:
+                reader = csv.reader(csvfile)
+                for row in reader:
+                    data.append(row)
+            reply_msg = ""
+            for row in data:
+                reply_msg += f"{row[0]}：{row[1]}\n"
+                line_bot_api.reply_message(
+                    event.reply_token,
+                    TextSendMessage(text=reply_msg))
+                
+        else:
+            line_bot_api.reply_message(
+                event.reply_token,
+                TextSendMessage(text=reply_msg))
 
 
 if __name__ == "__main__":
