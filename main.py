@@ -61,12 +61,13 @@ def handle_message(event):
         # chatgpt.add_msg(f"HUMAN:{event.message.text}?\n")
         # reply_msg = chatgpt.get_response().replace("AI:", "", 1)
         # chatgpt.add_msg(f"AI:{reply_msg}\n")
-        sent_msg = event.message.text
-        if sent_msg == "課程大綱":
             # 從data.csv讀取資料
             # 學制別,學年度,學期,開課單位,課程編號,科目名稱,上課日,上課時間,上課地點,選別,學分,教師背景,教師職稱,授課教師,授課語言
             # 研究所,112,1,資管碩一,D0F0333541,金融數據分析與智慧交易,Monday 星期一,"D5,D6,D7",SF130,選修,3,專任,助理教授,邱嘉洲,中文
             # 研究所,112,1,資管碩一,G745032133,敏捷式軟體開發,Monday 星期一,"E1,E2,E3",LW210,選修,3,專任,助理教授,吳濟聰,中文
+        
+        sent_msg = event.message.text
+        if sent_msg == "課程大綱":
             data = []
             with open('data.csv', newline='', encoding='utf-8') as csvfile:
                 reader = csv.reader(csvfile)
@@ -84,6 +85,33 @@ def handle_message(event):
                 event.reply_token,
                 TextSendMessage(text=reply_msg)
             )
+
+        
+        # data = []
+        # professor_list = []
+        # with open('data.csv', newline='', encoding='utf-8') as csvfile:
+        #     reader = csv.reader(csvfile)
+        #     for row in reader:
+        #         if data[0] not in professor_list:
+        #             data.append(row[13])
+        #             print("data: ", data)
+        # reply_msg = ""
+        # sent_msg = event.message.text.split(' ')
+        # for row in data:
+        #     professor_list.append(row[13])
+        # if sent_msg == "課程大綱":
+        #     reply_msg = "請輸入課堂名稱及教授名稱"
+        #     line_bot_api.reply_message(
+        #         event.reply_token,
+        #         TextSendMessage(text=reply_msg)
+        #     )
+        # if sent_msg[0] in professor_list:
+        #     filtered_data = [item for item in professor_list if all(filter in item for filter in sent_msg)]
+            # line_bot_api.reply_message(
+            #     event.reply_token,
+            #     TextSendMessage(text=reply_msg)
+            # )
+        # else:
 
 
 if __name__ == "__main__":
