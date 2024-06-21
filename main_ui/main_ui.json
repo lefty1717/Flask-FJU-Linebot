@@ -1,0 +1,429 @@
+{
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "size": "micro",
+      "hero": {
+        "type": "image",
+        "url": "https://github.com/fjuimagile/UI_documnet/blob/main/images/%E8%B3%87%E6%96%99%E5%BA%AB.png?raw=true",
+        "size": "full",
+        "aspectMode": "cover",
+        "aspectRatio": "320:213"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "高等資料庫管理",
+            "weight": "bold",
+            "size": "sm",
+            "wrap": true
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "text": "開課代碼",
+                "wrap": true,
+                "color": "#8c8c8c",
+                "size": "xxs",
+                "flex": 5
+              },
+              {
+                "type": "text",
+                "text": "G746107939",
+                "size": "xs",
+                "color": "#8c8c8c",
+                "margin": "md",
+                "flex": 0
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "教師姓名",
+                "wrap": true,
+                "color": "#8c8c8c",
+                "size": "xxs",
+                "flex": 5
+              },
+              {
+                "type": "text",
+                "text": "蔡幸蓁",
+                "size": "xs",
+                "color": "#8c8c8c",
+                "margin": "md",
+                "flex": 0
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "選修別",
+                "wrap": true,
+                "color": "#8c8c8c",
+                "size": "xxs",
+                "flex": 5
+              },
+              {
+                "type": "text",
+                "text": "必修",
+                "size": "xs",
+                "color": "#8c8c8c",
+                "margin": "md",
+                "flex": 0
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "學分",
+                "wrap": true,
+                "color": "#8c8c8c",
+                "size": "xxs",
+                "flex": 5
+              },
+              {
+                "type": "text",
+                "text": "3",
+                "size": "xs",
+                "color": "#8c8c8c",
+                "margin": "md",
+                "flex": 0
+              }
+            ]
+          }
+        ],
+        "spacing": "sm",
+        "paddingAll": "13px"
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "課程大綱",
+              "uri": "https://outline.fju.edu.tw/#/outLineSearch/outlineView/693891/1028"
+            },
+            "style": "secondary",
+            "height": "sm"
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "心得",
+              "text": "心得 "
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "size": "micro",
+      "hero": {
+        "type": "image",
+        "url": "https://github.com/fjuimagile/UI_documnet/blob/main/images/%E9%9B%BB%E5%AD%90%E5%95%86%E5%8B%99.png?raw=true",
+        "size": "full",
+        "aspectMode": "cover",
+        "aspectRatio": "320:213"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "電子商務總論",
+            "weight": "bold",
+            "size": "sm",
+            "wrap": true,
+            "margin": "none"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "text": "開課代碼",
+                "wrap": true,
+                "color": "#8c8c8c",
+                "size": "xxs",
+                "flex": 5,
+                "margin": "none"
+              },
+              {
+                "type": "text",
+                "text": "G746109290\t",
+                "size": "xs",
+                "color": "#8c8c8c",
+                "margin": "md",
+                "flex": 0
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "教師姓名",
+                "wrap": true,
+                "color": "#8c8c8c",
+                "size": "xxs",
+                "flex": 5
+              },
+              {
+                "type": "text",
+                "text": "廖建翔",
+                "size": "xs",
+                "color": "#8c8c8c",
+                "margin": "md",
+                "flex": 0
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "選修別",
+                "wrap": true,
+                "color": "#8c8c8c",
+                "size": "xxs",
+                "flex": 5
+              },
+              {
+                "type": "text",
+                "text": "必修",
+                "size": "xs",
+                "color": "#8c8c8c",
+                "margin": "md",
+                "flex": 0
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "學分",
+                "wrap": true,
+                "color": "#8c8c8c",
+                "size": "xxs",
+                "flex": 5
+              },
+              {
+                "type": "text",
+                "text": "3",
+                "size": "xs",
+                "color": "#8c8c8c",
+                "margin": "md",
+                "flex": 0
+              }
+            ]
+          }
+        ],
+        "spacing": "sm",
+        "paddingAll": "13px"
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "課程大綱",
+              "uri": "https://outline.fju.edu.tw/#/outLineSearch/outlineView/693892/1028"
+            },
+            "height": "sm",
+            "style": "secondary"
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "心得",
+              "text": "非常實用的課程，老師教學認真，時常關心同學進度。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "size": "micro",
+      "hero": {
+        "type": "image",
+        "url": "https://github.com/fjuimagile/UI_documnet/blob/main/images/%E6%95%8F%E6%8D%B7%E5%BC%8F.png?raw=true",
+        "size": "full",
+        "aspectMode": "cover",
+        "aspectRatio": "320:213"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "敏捷式軟體開發",
+            "weight": "bold",
+            "size": "sm"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "text": "開課代碼",
+                "wrap": true,
+                "color": "#8c8c8c",
+                "size": "xxs",
+                "flex": 5
+              },
+              {
+                "type": "text",
+                "text": "G745032133",
+                "size": "xs",
+                "color": "#8c8c8c",
+                "margin": "md",
+                "flex": 0
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "教師姓名",
+                "wrap": true,
+                "color": "#8c8c8c",
+                "size": "xxs",
+                "flex": 5
+              },
+              {
+                "type": "text",
+                "text": "吳濟聰",
+                "size": "xs",
+                "color": "#8c8c8c",
+                "margin": "md",
+                "flex": 0
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "選修別",
+                "wrap": true,
+                "color": "#8c8c8c",
+                "size": "xxs",
+                "flex": 5
+              },
+              {
+                "type": "text",
+                "text": "選修",
+                "size": "xs",
+                "color": "#8c8c8c",
+                "margin": "md",
+                "flex": 0
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "學分",
+                "wrap": true,
+                "color": "#8c8c8c",
+                "size": "xxs",
+                "flex": 5
+              },
+              {
+                "type": "text",
+                "text": "3",
+                "size": "xs",
+                "color": "#8c8c8c",
+                "margin": "md",
+                "flex": 0
+              }
+            ]
+          }
+        ],
+        "spacing": "sm",
+        "paddingAll": "13px"
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "課程大綱",
+              "uri": "https://outline.fju.edu.tw/#/outLineSearch/outlineView/700310/1028"
+            },
+            "height": "sm",
+            "style": "secondary"
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "心得",
+              "text": "非常實用的課程，老師教學認真，時常關心同學進度。"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
