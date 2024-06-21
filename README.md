@@ -1,7 +1,8 @@
 # vercel_linebot_flask
 
 - 使用Python Flask框架建立Linebot機器人並部署在Replit上。
-- Line Bot 連結: ![683blwxz](https://github.com/lefty1717/Flask-FJU-Linebot/assets/84022803/af91e4a3-04b4-4858-bc8b-735891f1f3bc)
+- Line Bot 連結:
+  ![683blwxz](https://github.com/lefty1717/Flask-FJU-Linebot/assets/84022803/af91e4a3-04b4-4858-bc8b-735891f1f3bc)
 
 
 ## 開發說明
